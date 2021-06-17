@@ -23,6 +23,7 @@ flashable:
   artifacts:
     paths:
       - out/boot.img
+      - out/recovery.img
       - out/system.img
 
 devel-flashable:
