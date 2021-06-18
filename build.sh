@@ -82,6 +82,8 @@ fi
 
 "$SCRIPT/make-bootimage.sh" "${TMPDOWN}/KERNEL_OBJ" "${TMPDOWN}/halium-boot-ramdisk.img" "${TMP}/partitions/boot.img"
 
+cp -v "${TMPDOWN}/KERNEL_OBJ/arch/$RAMDISK_ARCH/boot/dts/qcom/${deviceinfo_kernel_dtb_overlay}.dtbo" "${TMP}/partitions/dtbo.img"
+
 cp -av overlay/* "${TMP}/"
 "$SCRIPT/build-tarball-mainline.sh" "${deviceinfo_codename}" "${OUT}" "${TMP}"
 
