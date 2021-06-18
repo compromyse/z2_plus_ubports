@@ -12,7 +12,7 @@ build:
       - out/*
 
 flashable:
-  stage: deploy
+  stage: build
   script:
     - apt update
     - apt install -y img2simg jq sudo wget xz-utils
