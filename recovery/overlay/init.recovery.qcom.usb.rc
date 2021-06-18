@@ -18,9 +18,9 @@ on boot
     write /config/usb_gadget/g1/os_desc/b_vendor_code 0x1
     write /config/usb_gadget/g1/os_desc/qw_sign "MSFT100"
     symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
-    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=1000,rmode=0770,fmode=0660
 
-    setprop sys.usb.controller "a800000.dwc3"
+    setprop sys.usb.controller "a600000.dwc3"
 
 # Used to disable USB when switching states
 on property:sys.usb.config=none && property:sys.usb.configfs=0
