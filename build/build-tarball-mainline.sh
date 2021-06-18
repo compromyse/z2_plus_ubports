@@ -9,6 +9,10 @@ if [ ! -f "$dir/partitions/boot.img" ]; then
     echo "boot.img does not exist!"
 exit 1; fi
 
+if [ ! -f "$dir/partitions/dtbo.img" ]; then
+    echo "dtbo.img does not exist!"
+exit 1; fi
+
 if [ ! -f "$dir/partitions/recovery.img" ]; then
     echo "recovery.img does not exist!"
 #exit 1
