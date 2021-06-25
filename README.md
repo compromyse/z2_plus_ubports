@@ -4,9 +4,9 @@ This is based on Halium 9.0, and uses the mechanism described in [this page](htt
 
 You can download the ready-made artifacts from gitlab: take the [latest archive](https://gitlab.com/ubports/community-ports/android9/xiaomi-mi-mix-3/xiaomi-perseus/-/jobs/artifacts/master/download?job=flashable), unpack the `artifacts.zip` file (make sure that all files are created inside a directory called `out/`, then follow the instructions in the [Install](#install) section.
 
-## Pre-requisition:
+## Pre-requisites
 
-As this is based on Android 9, it is required to install stock vendor.img from Android 9. You can download from [here](https://github.com/ubports-perseus/ubuntu-touch-perseus/releases/download/v1.0-beta/vendor.zip) or from [Xiaomi Firmware Updater](https://xiaomifirmwareupdater.com/).
+As this is based on Android 9, it is required to install stock vendor.img from Android 9. You can download V9.9.3 from [here](https://github.com/ubports-perseus/ubuntu-touch-perseus/releases/download/v1.0-beta/vendor.zip) or from [Xiaomi Firmware Updater](https://xiaomifirmwareupdater.com/).
 DTBO based on LineageOS 16.0 is required to boot the ubuntu touch, get it from [here](https://github.com/ubports-perseus/ubuntu-touch-perseus/releases/download/v1.0-beta/dtbo.img) 
 
 Copy these images to directory `out/` above together with the artifacts.
