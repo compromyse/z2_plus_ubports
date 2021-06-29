@@ -8,7 +8,7 @@ deviceinfo_kernel_source="https://gitlab.com/ubuntu-touch-gemini/kernel-xiaomi-g
 deviceinfo_kernel_source_branch="halium-9.0"
 deviceinfo_kernel_defconfig="gemini_defconfig"
 deviceinfo_kernel_cmdline="androidboot.hardware=qcom androidboot.console=ttyMSM0 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 selinux=0 console=tty0 apparmor=1 security=apparmor systempart=/dev/disk/by-partlabel/system"
-deviceinfo_kernel_clang_compile="true"
+deviceinfo_kernel_clang_compile="false"
 deviceinfo_kernel_apply_overlay="false"
 deviceinfo_generate_bootimg="true"
 deviceinfo_bootimg_qcdt="false"
