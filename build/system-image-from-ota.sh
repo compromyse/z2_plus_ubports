@@ -39,13 +39,7 @@ logit "Starting image upgrader: $(date)"
 TOTAL=$(cat $COMMAND_FILE | wc -l)
 
 progress() {
-    # Devide by 0 will make go boom!
-    if [ "$1" == "0" ]; then
-        # echo "0" > cmd_pipe
-        @
-    fi
-    PRE=$(awk -vn="$1" -vt="$TOTAL" 'BEGIN{printf("%.0f\n",n/t*100)}')
-    # echo "$PRE" > cmd_pipe
+  echo "progress"
 }
 
 # Functions
